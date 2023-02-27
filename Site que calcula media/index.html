@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navegando</title>
+    <script type="text/javascript">
+        var nome, n1, n2, n3, media;
+        n1 = prompt("DIGITE A NOTA DA SUA 1 AVALIAÇÃO");
+        n1 = equal(n1);
+        n2 = prompt("DIGITE A NOTA DA SUA 2 AVALIAÇÃO");
+        n2 = equal(n2);
+        n3 = prompt("DIGITE A NOTA DA SUA 3 AVALIAÇÃO");
+        n3 = equal(n3);
+        media = (n1 + n2 + n3) / 3;
+
+        if (media >= 6){
+            document.write("APROVADO");
+        }
+            
+        else if (media <= 5){
+            document.write("REPROVADO");
+        }
+        else{
+            document.write("PODE RECUPERAR");
+        }
+        document.write("<br>", "ALUNO: " + nome, "<br>");
+        document.write("NOTA FINAL: " + media);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
